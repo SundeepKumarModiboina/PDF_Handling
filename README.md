@@ -5,7 +5,8 @@ Split, Merge, Add Watermark to the PDF
     Currently, two ways of splitting the PDF file has been implemented.
 
 ### 1. Splitting the PDF file after the given "n" page number
-       Ex : If the input PDF file has 10 pages and if the given page number is 5, the Split after given page number makes a split after   the 5th page and creates two PDF files.
+       Ex : If the input PDF file has 10 pages and if the given page number is 5, the Split after given page number 
+            makes a split after the 5th page and creates two PDF files.
             The first PDF file contains the pages from the 1st page to 5th page.
             The second PDF file contains the pages from 6th page to the last page.
             
