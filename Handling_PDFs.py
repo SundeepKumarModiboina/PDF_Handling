@@ -80,8 +80,7 @@ class PDF_Stuff:
 				output_1_filename = '{}_page_{}.pdf'.format(fname, page + 1)
 
 			# Write the file data to the output file
-			output_file_1 = open(output_1_filename, "wb")
-			output_1.write(output_file_1)
+			self.write_to_file(output_1_filename, output_1)
 
 			# Loop through the pages and add the page data to the output
 			for page in range(page_num,pdf_len):
@@ -96,8 +95,7 @@ class PDF_Stuff:
 				output_2_filename = '{}_page_{}.pdf'.format(fname, page + 1)
 
 			# Write the file data to the output file
-			output_file_2 = open(output_2_filename, "wb")
-			output_2.write(output_file_2)
+			self.write_to_file(output_2_filename,output_2)
 
 
 	# Method to split the pdf at every given n pages.
@@ -187,10 +185,10 @@ if __name__ == '__main__':
 	itr.getDocInfo()
 
 	# Split the PDF file after the given "n" page number.
-	itr.split_after(10)
+	itr.split_after(15)
 
 	# Split the PDF file at every given "n" pages
-	itr.split_at_every(2)
+	# itr.split_at_every(2)
 
 
 
